@@ -3,8 +3,7 @@ const Film = ({name, children}) => {
 
     return (
         <li>
-            <p>{name}</p>
-            <p>{children}</p>
+            <a href={children}> {name}</a>
         </li>
     );
 

@@ -13,10 +13,12 @@ const FilmReleases = ({films}) => {
 
 return (
     <>
-    <h2>This is the film release list</h2>
+    <h2>Upcoming Film Releases for the UK</h2>
     <ul>
         {filmList}
     </ul>
+
+    <a href="https://www.imdb.com/calendar/?region=gb">View more upcoming releases....</a>
     </>
 );
 };

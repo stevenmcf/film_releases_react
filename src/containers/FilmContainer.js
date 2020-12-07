@@ -35,8 +35,7 @@ const FilmContainer = () => {
 
     return (
         <>
-        <h2>This is the main film container</h2>
-        <FilmReleases films={films} />
+            <FilmReleases films={films} />
         </>
     );
 
