@@ -1,12 +1,22 @@
 import Film from './Film'
 
+// pass props of films from state in film container
+const FilmReleases = ({films}) => {
 
-const FilmReleases = () => {
+    const filmList = films.map ( film => {
+
+        return (
+            <Film name={film.name} key={film.id}>{film.url}</Film>
+        )
+
+    });
 
 return (
     <>
     <h2>This is the film release list</h2>
-    <Film />
+    <ul>
+        {filmList}
+    </ul>
     </>
 );
 };

@@ -1,9 +1,10 @@
 
-const Film = () => {
+const Film = ({name, children}) => {
 
     return (
         <li>
-            <p>This is the film</p>
+            <p>{name}</p>
+            <p>{children}</p>
         </li>
     );
 
